@@ -1,7 +1,7 @@
 {
   "name": "css-ideas",
   "version": "1.0.0",
-  "description": "Tryin' to come up some ideas on pure CSS",
+  "description": "Tryin' to come up with some ideas on pure CSS",
   "scripts": {
     "build": "gulp",
     "clean": "gulp clean"
