@@ -1,0 +1,28 @@
+{
+  "name": "css-ideas",
+  "version": "1.0.0",
+  "description": "Tryin' to come up some ideas on pure CSS",
+  "scripts": {
+    "build": "gulp",
+    "clean": "gulp clean"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "chrischan",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-mini-css": "0.0.3",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {}
+}
