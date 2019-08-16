@@ -10,6 +10,7 @@ html, body {
   min-width: 960px;
   min-height: 300px;
   position: relative;
+  overflow: hidden;
 }
 
 .column {
@@ -17,4 +18,5 @@ html, body {
   height: 100%;
   position: relative;
   float: left;
+  overflow: hidden;
 }
