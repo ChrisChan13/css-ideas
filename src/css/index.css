@@ -1,6 +1,7 @@
 html, body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .row {
@@ -15,4 +16,5 @@ html, body {
   width: 50%;
   height: 100%;
   position: relative;
+  float: left;
 }
