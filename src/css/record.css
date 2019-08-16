@@ -1,0 +1,70 @@
+.record-wrap {
+  background-color: rgb(120, 120, 120);
+}
+
+.record {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: repeating-radial-gradient(rgb(16, 16, 18), rgb(20, 20, 22) 3%);
+  animation: playing 7s linear infinite;
+}
+
+.record:hover {
+  animation-play-state: paused;
+}
+
+.record::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    transparent,
+    transparent 20%,
+    rgba(255, 255, 255, 0.1) 25%,
+    transparent 30%,
+    transparent 70%,
+    rgba(255, 255, 255, 0.1) 75%,
+    transparent 80%,
+    transparent
+  );
+}
+
+.record::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(
+    rgb(36, 36, 36) 2.5px,
+    rgb(154, 21, 6) 2.5px,
+    rgb(154, 21, 6) 17px,
+    rgb(36, 36, 36) 17px,
+    rgb(36, 36, 36) 17.5px,
+    rgb(154, 21, 6) 17.5px,
+    rgb(154, 21, 6) 45px,
+    rgb(36, 36, 36) 45px,
+    rgb(36, 36, 36) 45.7px,
+    rgb(154, 21, 6) 45.7px,
+    rgb(154, 21, 6) 50px,
+    rgba(0, 0, 0, 0.5) 50px
+  );
+}
+
+@keyframes playing {
+  from { transform: translate3d(-50%, -50%, 0) rotate(0deg); }
+  to { transform: translate3d(-50%, -50%, 0) rotate(360deg); }
+}
