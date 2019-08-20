@@ -1,0 +1,61 @@
+.rate {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  display: flex;
+  flex-flow: row-reverse;
+  height: 80px;
+}
+
+input[name='star'] {
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-right: 11.25px solid transparent;
+  border-bottom: 30px solid #FFAC33;
+  border-left: 11.25px solid transparent;
+  margin: -30px 40px 0 40px;
+  filter: grayscale(100%);
+  transition: filter 0.2s ease-in;
+}
+
+input[name='star']:checked~.star,
+.star:hover,
+.star:hover~.star {
+  filter: grayscale(0);
+}
+
+.star::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -10px;
+  left: -18px;
+  border-top: 40px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 30px solid #FFAC33;
+  transform: rotate(-53.13deg);
+}
+
+.star::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -10px;
+  left: -41px;
+  border-top: 40px solid transparent;
+  border-right: 30px solid #FFAC33;
+  border-bottom: 40px solid transparent;
+  border-left: 30px solid transparent;
+  transform: rotate(53.13deg);
+}

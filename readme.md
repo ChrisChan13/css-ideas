@@ -9,3 +9,6 @@ A pinball game with only one div(not actually a game LOL), [view/edit on codepen
 
 4. **Black & White**:
 A ball shuttle between black & white with only one div, [view/edit on codepen](https://codepen.io/ChrisChan1213/pen/xxKVoZb)
+
+5. **Star Rating**:
+A five-star rating system, [view/edit on codepen](https://codepen.io/ChrisChan1213/pen/eYOdxxM)
