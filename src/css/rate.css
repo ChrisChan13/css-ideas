@@ -47,12 +47,17 @@ label.star {
 }
 
 input[name='star']:checked~label.star,
-label.star:hover,
-label.star:hover~label.star,
+input[name='star']:not(:disabled)+label.star:hover,
+input[name='star']:not(:disabled)+label.star:hover~label.star,
 input[name='star-half']:checked~.star-wrap,
-.star-wrap:hover,
-.star-wrap:hover~.star-wrap {
+input[name='star-half']:not(:disabled)+.star-wrap:hover,
+input[name='star-half']:not(:disabled)+.star-wrap:hover~.star-wrap {
   filter: grayscale(0);
+}
+
+input[name='star']:disabled+label.star,
+input[name='star-half']:disabled+.star-wrap {
+  cursor: not-allowed;
 }
 
 .star::before {
