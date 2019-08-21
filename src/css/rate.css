@@ -21,8 +21,6 @@ input[name='star-half'] {
   width: 51.25px;
   height: 100%;
   overflow: hidden;
-  filter: grayscale(100%);
-  transition: filter 0.2s ease-in;
 }
 
 .star-wrap:nth-of-type(odd)>.star {
@@ -40,19 +38,16 @@ input[name='star-half'] {
   border-left: 11.25px solid transparent;
   margin: -30px 40px 0 40px;
   transition: filter 0.2s ease-in;
-}
-
-label.star {
-  filter: grayscale(100%);
+  filter: grayscale(100%) drop-shadow(1px 0.5px 1px #B5B5B5);
 }
 
 input[name='star']:checked~label.star,
 input[name='star']:not(:disabled)+label.star:hover,
 input[name='star']:not(:disabled)+label.star:hover~label.star,
-input[name='star-half']:checked~.star-wrap,
-input[name='star-half']:not(:disabled)+.star-wrap:hover,
-input[name='star-half']:not(:disabled)+.star-wrap:hover~.star-wrap {
-  filter: grayscale(0);
+input[name='star-half']:checked~.star-wrap>.star,
+input[name='star-half']:not(:disabled)+.star-wrap:hover>.star,
+input[name='star-half']:not(:disabled)+.star-wrap:hover~.star-wrap>.star {
+  filter: grayscale(0) drop-shadow(1px 0.5px 1px #FFAC33);
 }
 
 input[name='star']:disabled+label.star,
